@@ -3,7 +3,8 @@ Template.queries.helpers({
 	{
 		return Searches.find().fetch().length;
 	},
-	results : function()		//get logs	{
+	results : function()		//get logs	
+	{
 		return Searches.find();
 	}
 });
