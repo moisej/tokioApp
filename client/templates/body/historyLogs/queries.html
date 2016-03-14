@@ -1,0 +1,35 @@
+<template name="queries">
+	{{#if resultsExist}}	
+	<h2>Last searches</h2>
+	<p></p>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Query</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+				<th>Radius</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each results}}
+			<tr>
+				<td>
+					<button type="button" class="btn btn-default" id="delete_button">
+  						<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+					</button>
+
+				</td>
+				<td>{{query}}</td>
+				<td>{{lat}}</td>
+				<td>{{lng}}</td>
+				<td>{{radius}}</td>
+				<td>{{submitted}}</td>
+			</tr>
+		{{/each}}
+		</tbody>
+	</table>
+	{{/if}}
+</template>

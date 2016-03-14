@@ -1,0 +1,5 @@
+Foursquare.init({
+  id: 'TKHSZ5XROZZCOYVYHHJNKKJWRTBSBMMCTJF2USGNDEMHPY01',
+  secret: 'VWPUX2LLQJYJPHARCA5O4XNXUR42NQUMLN4Q3FADXDS2F5UM',
+  authOnly: false // need auth for using or no?
+});

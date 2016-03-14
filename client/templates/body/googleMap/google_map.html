@@ -1,0 +1,14 @@
+<!--TEMPLATE WITH SEARCH FIELD AND MAP-->
+<template name='googleMap'>
+	{{#if logIn}}
+	<h2>What are you looking for?<small> watch result below the map</small></h2>
+	<div class="form-group">
+   		<input type="text" class="form-control" id="venue_queue" placeholder="Search place">
+   	</div>
+   	{{else}}
+   	<h3>Warning:<small> to use this application you need to sign in or create account</small></h3>
+   	<p></p>
+   	{{/if}}
+	<div id="map" class="mapbox"></div>
+   <p></p>
+</template>

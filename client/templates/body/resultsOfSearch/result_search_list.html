@@ -1,0 +1,31 @@
+<template name='resultSearchList'>
+	{{#if venusList}}
+	
+	<div class = "row">
+		<div class="col-md-10"><h2>{{venusList}} places found</h2></div>
+ 		<div class="col-md-2" id="csv_button"><button type="button" id="download_button" class="pull-right btn btn-default">Export CSV</button></div>
+	</div>
+	<table class="table table-bordered">
+		<thead>
+			<tr style="background-color:black; color:white; border-bottom-width: 0px;">
+				<th>Name</th>
+				<th>City</th>
+				<th>Street Address</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each venus}}
+			<tr style="background-color:white">
+				<td>{{name}}</td>
+				<td>{{city}}</td>
+				<td>{{street}}</td>
+				<td>{{latitude}}</td>
+				<td>{{longitude}}</td>
+			</tr>
+		{{/each}}
+		</tbody>
+	</table>
+	{{/if}}
+</template>
